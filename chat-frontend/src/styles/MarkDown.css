@@ -1,0 +1,246 @@
+/* 样式化所有文本内容 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 1em;
+}
+
+/* 链接 */
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 标题 */
+h1, h2, h3, h4, h5, h6 {
+    color: #111;
+    line-height: 1.2;
+}
+
+/* 段落 */
+p {
+    margin-bottom: 1em;
+}
+
+/* 强调 */
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+/* 块引用 */
+blockquote {
+    margin: 0.8em 0;
+    padding: 0.5em 1em;
+    background: #f8f8f8;
+    border-left: 0.25em solid #dfe2e5;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+/* 列表 */
+ul, ol {
+    padding-left: 2em;
+    margin: 1em 0;
+}
+
+/* 代码和代码块 */
+code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 90%;
+    background-color: rgba(27,31,35,.05);
+    border-radius: 3px;
+}
+
+pre {
+    padding: 1em;
+    margin: 1em 0;
+    font-size: 90%;
+    color: #333;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+}
+
+pre code {
+    background: #f8f8f8;
+}
+
+/* 分隔线 */
+hr {
+    height: 0;
+    border: 0;
+    border-top: 1px solid #dfe2e5;
+}
+
+/* 表格 */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+table, th, td {
+    border: 1px solid #dfe2e5;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+/* 图片 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Markdown的可能扩展功能*/
+
+/* Inline code */
+:is(code, kbd, samp) {
+    padding: .2em .4em;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+/* Strikethrough */
+s {
+    text-decoration: line-through;
+}
+
+/* Task list */
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin: 0 0.2em 0.25em -1.6em;
+    vertical-align: middle;
+}
+
+/* Table of contents */
+nav#TOC {
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    padding: .5em;
+}
+
+/* Abbreviations */
+abbr[title] {
+    border-bottom: 1px dotted #777;
+    cursor: help;
+}
+
+/* Footnotes */
+.footnote-ref {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.footnotes {
+    font-size: smaller;
+    color: #777;
+}
+
+.footnotes ol {
+    list-style-type: decimal;
+}
+
+.footnote-backref {
+    color: #777;
+    text-decoration: none;
+}
+
+.footnote-backref:hover {
+    text-decoration: underline;
+}
+
+/* Definition lists */
+dl {
+    margin: 1em 0;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 1.5em;
+}
+
+
+
+/*qita*/
+
+/* Blockquotes, nested */
+blockquote blockquote {
+    margin-left: 0;
+    padding-left: 1em;
+    color: #666;
+    border-left: .5em solid #eee;
+}
+
+/* Custom containers/alerts, if supported by your markdown parser */
+.custom-info, 
+.custom-success, 
+.custom-warning, 
+.custom-danger {
+    padding: .5em;
+    border-left: .5em solid;
+}
+
+.custom-info {
+    background-color: #eef;
+    border-color: #eed;
+}
+
+.custom-success {
+    background-color: #efe;
+    border-color: #ded;
+}
+
+.custom-warning {
+    background-color: #ffe;
+    border-color: #eed;
+}
+
+.custom-danger {
+    background-color: #fee;
+    border-color: #edd;
+}
+
+/* If using emojis */
+.emoji {
+    width: 1em;
+    height: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+}
+
+/* For image alignment, if supported */
+img[align="left"] {
+    float: left;
+}
+
+img[align="right"] {
+    float: right;
+}
+
+img[align="center"] {
+    display: block;
+    margin: 0 auto;
+}
